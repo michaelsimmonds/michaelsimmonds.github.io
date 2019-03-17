@@ -1,5 +1,109 @@
-body {
-  background-color: blue;
-  color: white;
-  font-family: Helvetica, sans-serif;
+@font-face {
+  src: url(fonts/moon/light.otf);
+  font-family: moon-light;
 }
+
+@font-face {
+  src: url(fonts/moon/bold.otf);
+  font-family: moon-bold;
+}
+
+
+body {
+  color: #161F28;
+  font-family: moon-bold;
+}
+
+div {
+  margin: 20px;
+}
+
+#hero {
+  background-image: url('./assets/design1.jpeg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero h1{
+  margin: 15px;
+  font-size: 3em;
+  letter-spacing: 0.3em;
+}
+
+.project-content {
+  display: flex;
+}
+
+img {
+  height: 25em;
+  padding: 1em;
+}
+
+a {
+  display: block;
+  margin: 1em 0;
+}
+
+.project-name, .project-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin: .5em;
+}
+
+p {
+  font-family: moon-light;
+  font-size: 20px;
+}
+
+.title-area {
+  border-top: 3px solid #C7DEED;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #FFA89B;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background: #C7DEED;
+  border-radius: 50%;
+}
+
+.square {
+  width: 120px;
+  height: 120px;
+  background: #FFF284;
+} */
