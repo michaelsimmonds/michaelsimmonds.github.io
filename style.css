@@ -43,8 +43,25 @@ div {
 }
 
 .project-content {
-  display: none;
+  display: flex;
 }
+
+/* .hide {
+  visibility: hidden;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+  transition: .3s;
+} */
+
+/* .show {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  height: 200px;
+} */
+
 
 img {
   width: 30em;
