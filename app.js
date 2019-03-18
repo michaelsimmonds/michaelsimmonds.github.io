@@ -1,11 +1,6 @@
 console.log('loaded')
 
-$(function() {
-
-
-  // $('.show-button').click(function() {
-  //
-  // })
+$('DOM content loaded', function() {
 
   $('.project-content').hide()
 

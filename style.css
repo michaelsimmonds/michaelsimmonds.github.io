@@ -18,7 +18,6 @@ div {
 }
 
 #hero, #bottom-hero {
-  height: 350px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,17 +28,40 @@ div {
 }
 
 #hero {
-  background-image: url('./assets/design3.jpeg');
+  background-image: url('./assets/design-with-name.png');
+  height: 600px;
+  padding: 90px 0;
+  background-attachment: fixed;
+  position: relative;
 }
 
 #hero h1{
   margin: 15px;
   font-size: 3em;
   letter-spacing: 0.3em;
+  background-attachment: fixed;
+  /* position: fixed; */
+  /* z-index: 2000; */
+  /* position: absolute;
+  top: 20px
+  left: 20px; */
+
 }
+
+/* .paralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
 
 #bottom-hero {
   background-image: url('./assets/design5.jpeg');
+  height: 600px;
+  margin-top: 80px;
+  background-attachment: fixed;
+  bottom: 0;
+  padding-bottom: -100px;
 }
 
 .project-content {
@@ -73,6 +95,7 @@ a {
 p {
   font-family: moon-light;
   font-size: 20px;
+  text-align: justify;
 }
 
 .title-area {
@@ -93,6 +116,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin: 1.5em;
 }
 
 button:hover {
@@ -109,7 +133,7 @@ button:hover {
 }
 
 .title-area-1 {
-  border-top: 3px solid #C7DEED;
+  border-bottom: 8px solid #C7DEED;
 }
 
 .space-link {
@@ -120,7 +144,7 @@ button:hover {
 }
 
 .title-area-2 {
-  border-top: 3px solid #FFF284;
+  border-bottom: 8px solid #FFF284;
 }
 
 .hack-link {
@@ -131,7 +155,7 @@ button:hover {
 }
 
 .title-area-3 {
-  border-top: 3px solid #FFA89B;
+  border-bottom: 8px solid #FFA89B;
 }
 
 .travel-link {
@@ -142,7 +166,7 @@ button:hover {
 }
 
 .title-area-4 {
-  border-top: 3px solid #161F28;
+  border-bottom: 8px solid #161F28;
 }
 
 .bar-link {
@@ -164,9 +188,9 @@ ul {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: -180px;
 }
 
 .contact-title {
-  font-size: 2em;
-  margin: 1em 0 0 0;
+  font-size: 2.5em;
 }
