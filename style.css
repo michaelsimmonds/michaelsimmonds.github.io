@@ -8,7 +8,6 @@
   font-family: moon-bold;
 }
 
-
 body {
   color: #161F28;
   font-family: moon-bold;
@@ -18,8 +17,7 @@ div {
   margin: 20px;
 }
 
-#hero {
-  background-image: url('./assets/design1.jpeg');
+#hero, #bottom-hero {
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,6 +26,14 @@ div {
   text-align: center;
   flex-direction: column;
   justify-content: center;
+}
+
+#hero {
+  background-image: url('./assets/design1.jpeg');
+}
+
+#bottom-hero {
+  background-image: url('./assets/design2.jpeg');
 }
 
 #hero h1{
@@ -42,7 +48,6 @@ div {
 
 img {
   width: 30em;
-  /* height: 25em; */
   padding: 1em;
 }
 
@@ -75,9 +80,6 @@ button {
   display: flex;
   justify-content: center;
 }
-
-
-
 
 .title-area-1 {
   border-top: 3px solid #C7DEED;
@@ -125,6 +127,13 @@ button {
 
 ul {
   list-style-type: none;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 
