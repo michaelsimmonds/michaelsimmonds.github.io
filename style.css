@@ -37,7 +37,7 @@ div {
 }
 
 .project-content {
-  display: flex;
+  display: none;
 }
 
 img {
@@ -56,13 +56,28 @@ a {
 .project-name, .project-title {
   text-align: center;
   font-size: 2.5em;
-  margin: .5em;
+  margin: .25em;
 }
 
 p {
   font-family: moon-light;
   font-size: 20px;
 }
+
+.title-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 .title-area-1 {
   border-top: 3px solid #C7DEED;
