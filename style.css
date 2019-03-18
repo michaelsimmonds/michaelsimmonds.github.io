@@ -79,7 +79,33 @@ p {
 button {
   display: flex;
   justify-content: center;
+  width: 4em;
+  height: 2em;
+  border: none;
+  outline: none;
+  transition: transform .2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.6);
+}
+
+.show-button {
+  background-image: url('./assets/chevron-down.png');
+}
+
+.hide-button {
+  background-image: url('./assets/chevron-up.png');
+}
+
+
+
+
+
 
 .title-area-1 {
   border-top: 3px solid #C7DEED;
@@ -127,6 +153,7 @@ button {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .contact-div {

@@ -18,18 +18,17 @@
       <div class="title-area title-area-1">
         <h2 class="project-name">Project One</h2>
         <h3 class="project-title">Space Invaders</h3>
-        <button onclick='showSpace()'>See Below</button>
-      </div>
-      <div class="project-content space">
-        <div>
-          <img src="https://media.giphy.com/media/3s91pRatVL3xrHRiFN/giphy.gif" alt="game screenshot">
+        <div class="project-content space">
+          <div>
+            <img src="https://media.giphy.com/media/3s91pRatVL3xrHRiFN/giphy.gif" alt="game screenshot">
+          </div>
+          <div>
+            <p>This week-long project was the first I completed at General Assembly. The aim of the game is to shoot as many aliens out of the sky before the player runs out of lives or the aliens invade. I built this game using vanilla JavaScript, CSS and HTML.</p>
+            <a href="https://github.com/michaelsimmonds/WDI-Project-01" target="_blank" class="space-link">See the Code</a>
+            <a href="http://michaelsimmonds.me/WDI-Project-01/" target="_blank" class="space-link">Play the Game</a>
+          </div>
         </div>
-        <div>
-          <p>This week-long project was the first I completed at General Assembly. The aim of the game is to shoot as many aliens out of the sky before the player runs out of lives or the aliens invade. I built this game using vanilla JavaScript, CSS and HTML.</p>
-          <a href="https://github.com/michaelsimmonds/WDI-Project-01" target="_blank" class="space-link">See the Code</a>
-          <a href="http://michaelsimmonds.me/WDI-Project-01/" target="_blank" class="space-link">Play the Game</a>
-        </div>
-
+        <button onclick='onClick(this)' class='show-button'></button>
       </div>
     </div>
 
@@ -37,54 +36,57 @@
       <div class="title-area title-area-2">
         <h2 class="project-name">Project Two</h2>
         <h3 class="project-title">Hackathon</h3>
-        <button onclick='showHackathon()'>See Below</button>
-      </div>
-      <div class="project-content hackathon">
-        <div>
-          <img src="https://media.giphy.com/media/fjxN1p5ms3TBUT9qaf/giphy.gif" alt="site gif">
+        <div class="project-content hackathon">
+          <div>
+            <img src="https://media.giphy.com/media/fjxN1p5ms3TBUT9qaf/giphy.gif" alt="site gif">
+          </div>
+          <div>
+            <p>In this two day pair project we used an external API to gather information about comedy nights in London.</p>
+            <a href="https://github.com/michaelsimmonds/WDI-Project-02-Hackathon" target="_blank" class="hack-link">See the Code</a>
+            <a href="https://react-comedynight-hackathon.herokuapp.com/" target="_blank" class="hack-link">Visit the Site</a>
+          </div>
         </div>
-        <div>
-          <p>In this two day pair project we used an external API to gather information about comedy nights in London.</p>
-          <a href="https://github.com/michaelsimmonds/WDI-Project-02-Hackathon" target="_blank" class="hack-link">See the Code</a>
-          <a href="https://react-comedynight-hackathon.herokuapp.com/" target="_blank" class="hack-link">Visit the Site</a>
-        </div>
+        <button onclick='onClick(this)' class='show-button'></button>
       </div>
+
     </div>
 
     <div>
       <div class="title-area title-area-3">
         <h2 class="project-name">Project Three</h2>
         <h3 class="project-title">Explore</h3>
-        <button onclick='showTravel()'>See Below</button>
-      </div>
-      <div class="project-content travel">
-        <div>
-          <img src="./assets/travel-app.gif" alt="site gif">
+        <div class="project-content travel">
+          <div>
+            <img src="./assets/travel-app.gif" alt="site gif">
+          </div>
+          <div>
+            <p>For this five day group project, we built a full-stack application to plan and display a round-the-world trip.</p>
+            <a href="https://github.com/michaelsimmonds/WDI-Project-03-Travel-App" target="_blank" class="travel-link">See the Code</a>
+            <a href="https://project-4-wdi.herokuapp.com/" target="_blank" class="travel-link">Visit the Site</a>
+          </div>
         </div>
-        <div>
-          <p>For this five day group project, we built a full-stack application to plan and display a round-the-world trip.</p>
-          <a href="https://github.com/michaelsimmonds/WDI-Project-03-Travel-App" target="_blank" class="travel-link">See the Code</a>
-          <a href="https://project-4-wdi.herokuapp.com/" target="_blank" class="travel-link">Visit the Site</a>
-        </div>
+        <button onclick='onClick(this)' class='show-button'></button>
       </div>
+
     </div>
 
     <div>
       <div class="title-area title-area-4">
         <h2 class="project-name">Project Four</h2>
         <h3 class="project-title">Sunset Barlevard</h3>
-        <button onclick='showBarlevard()'>See Below</button>
-      </div>
-      <div class="project-content barlevard">
-        <div>
-          <img src="./assets/barlevard.gif" alt="site gif">
+        <div class="project-content barlevard">
+          <div>
+            <img src="./assets/barlevard.gif" alt="site gif">
+          </div>
+          <div>
+            <p>This was a week long group project where we created an app which enabled users to create and display their own bar crawls</p>
+            <a href="https://github.com/michaelsimmonds/WDI-Project-04-Sunset-Barlevard" target="_blank" class="bar-link">See the Code</a>
+            <a href="https://sunset-barlevard.herokuapp.com/" target="_blank" class="bar-link">Visit the Site</a>
+          </div>
         </div>
-        <div>
-          <p>This was a week long group project where we created an app which enabled users to create and display their own bar crawls</p>
-          <a href="https://github.com/michaelsimmonds/WDI-Project-04-Sunset-Barlevard" target="_blank" class="bar-link">See the Code</a>
-          <a href="https://sunset-barlevard.herokuapp.com/" target="_blank" class="bar-link">Visit the Site</a>
-        </div>
+        <button onclick='onClick(this)' class='show-button'></button>
       </div>
+
     </div>
 
     <div id="bottom-hero"></div>
@@ -93,7 +95,7 @@
       <h2>Contact</h2>
       <p>Don't be a stranger. Reach out.</p>
       <ul>
-        <li>michaelsimmonds1992@gmail.com</li>
+        <li><a href="mailto:michaelsimmonds1992@gmail.com">michaelsimmonds1992@gmail.com</a></li>
         <li><a href="https://github.com/michaelsimmonds" target="_blank">github.com/michaelsimmonds</a></li>
         <li><a href="https://www.linkedin.com/in/michaelsimmonds1992/">linkedin.com/in/michaelsimmonds1992</a></li>
       </ul>
