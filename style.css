@@ -35,6 +35,7 @@ div {
   position: relative;
 }
 
+/* Do i need this??? */
 #hero h1{
   margin: 15px;
   font-size: 3em;
@@ -56,13 +57,51 @@ div {
 } */
 
 #bottom-hero {
-  background-image: url('./assets/design5.jpeg');
-  height: 600px;
-  margin-top: 80px;
+  background-image: url('./assets/contact3.png');
+  height: 620px;
+  margin: 80px -20px;
   background-attachment: fixed;
   bottom: 0;
-  padding-bottom: -100px;
+  padding: 30px;
 }
+
+.about {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.about-writing {
+  display: flex;
+  flex-direction: column;
+}
+
+#me {
+  border-radius: 50%;
+  width: 23em;
+  padding: 0;
+  margin-left: 0;
+}
+
+.me-div {
+  margin-left: 0;
+}
+
+
+#break-image {
+  background-image: url('./assets/projects2.png');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
 
 .project-content {
   display: flex;
@@ -75,16 +114,27 @@ img {
 
 a {
   display: block;
-  margin: 1em 0;
+  margin: 1em 1em 0 0;
   color: #161F28;
   text-decoration: none;
 }
 
-.project-name {
+.project-name, .about-title {
   text-align: center;
   font-size: 2.5em;
   margin: .25em;
 }
+
+
+/* DELETE THIS AFTER BREAK IMAGE IS DONE */
+/* .projects {
+  text-align: center;
+  font-size: 3em;
+  margin: .25em;
+  padding-top: 250px;
+} */
+
+
 
 .project-title {
   text-align: center;
@@ -133,7 +183,7 @@ button:hover {
 }
 
 .title-area-1 {
-  border-bottom: 8px solid #C7DEED;
+  border-bottom: 5px solid #C7DEED;
 }
 
 .space-link {
@@ -144,7 +194,7 @@ button:hover {
 }
 
 .title-area-2 {
-  border-bottom: 8px solid #FFF284;
+  border-bottom: 5px solid #FFF284;
 }
 
 .hack-link {
@@ -155,7 +205,7 @@ button:hover {
 }
 
 .title-area-3 {
-  border-bottom: 8px solid #FFA89B;
+  border-bottom: 5px solid #FFA89B;
 }
 
 .travel-link {
@@ -166,7 +216,7 @@ button:hover {
 }
 
 .title-area-4 {
-  border-bottom: 8px solid #161F28;
+  border-bottom: 5px solid #161F28;
 }
 
 .bar-link {
