@@ -14,7 +14,7 @@ body {
 }
 
 div {
-  margin: 20px;
+  padding: 20px;
 }
 
 #hero, #bottom-hero {
@@ -30,31 +30,10 @@ div {
 #hero {
   background-image: url('./assets/design-with-name.png');
   height: 600px;
-  padding: 90px 0;
+  padding: 100px 0;
   background-attachment: fixed;
   position: relative;
 }
-
-/* Do i need this??? */
-#hero h1{
-  margin: 15px;
-  font-size: 3em;
-  letter-spacing: 0.3em;
-  background-attachment: fixed;
-  /* position: fixed; */
-  /* z-index: 2000; */
-  /* position: absolute;
-  top: 20px
-  left: 20px; */
-
-}
-
-/* .paralax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
 
 #bottom-hero {
   background-image: url('./assets/contact3.png');
@@ -86,7 +65,6 @@ div {
   margin-left: 0;
 }
 
-
 #break-image {
   background-image: url('./assets/projects2.png');
   height: 500px;
@@ -95,13 +73,6 @@ div {
   background-size: contain;
   background-attachment: fixed;
 }
-
-
-
-
-
-
-
 
 .project-content {
   display: flex;
@@ -124,17 +95,6 @@ a {
   font-size: 2.5em;
   margin: .25em;
 }
-
-
-/* DELETE THIS AFTER BREAK IMAGE IS DONE */
-/* .projects {
-  text-align: center;
-  font-size: 3em;
-  margin: .25em;
-  padding-top: 250px;
-} */
-
-
 
 .project-title {
   text-align: center;
@@ -257,8 +217,3 @@ ul {
   margin-right: -20px;
   padding-bottom: -20px;
 }
-
-/* .end-caption {
-  font-size: 3em;
-  padding-top: 200px;
-} */
