@@ -32,7 +32,6 @@ div {
   height: 30em;
   padding: 10em 0;
   background-attachment: fixed;
-  position: relative;
 }
 
 #bottom-hero {
@@ -76,6 +75,7 @@ div {
 
 .project-content {
   display: flex;
+  padding: 5px;
 }
 
 img {
@@ -222,6 +222,13 @@ ul {
 @media screen and (max-width: 600px) {
   body {
     background-color: lightblue;
+  }
+
+  #hero, #end-image, #bottom-hero, #break-image {
+    padding: 1em 0;
+    height: 3em;
+    padding-top: 5em;
+    background-attachment: scroll;
   }
 
   .about, .project-content {
