@@ -29,24 +29,24 @@ div {
 
 #hero {
   background-image: url('./assets/design-with-name.png');
-  height: 600px;
-  padding: 100px 0;
+  height: 30em;
+  padding: 10em 0;
   background-attachment: fixed;
   position: relative;
 }
 
 #bottom-hero {
   background-image: url('./assets/contact3.png');
-  height: 620px;
-  margin: 80px -20px;
+  height: 31em;
+  margin: 2em -.5em;
   background-attachment: fixed;
   bottom: 0;
-  padding: 30px;
+  padding: 1em;
 }
 
 .about {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 5em;
 }
 
 .about-writing {
@@ -67,7 +67,7 @@ div {
 
 #break-image {
   background-image: url('./assets/projects2.png');
-  height: 500px;
+  height: 30em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -104,7 +104,7 @@ a {
 
 p {
   font-family: moon-light;
-  font-size: 20px;
+  font-size: 1.3em;
   text-align: justify;
 }
 
@@ -198,7 +198,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -3em;
   padding: 10em 0;
 }
 
@@ -208,7 +208,7 @@ ul {
 
 #end-image {
   background-image: url('./assets/thanks.png');
-  height: 600px;
+  height: 37em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
