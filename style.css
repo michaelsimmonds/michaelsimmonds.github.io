@@ -217,3 +217,18 @@ ul {
   margin-right: -20px;
   padding-bottom: -20px;
 }
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .about, .project-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5px;
+  }
+
+}
