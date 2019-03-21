@@ -64,7 +64,47 @@ div {
   margin-left: 0;
 }
 
-#break-image {
+
+.devicons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5.2em 0;
+}
+
+.skills-icon {
+  font-size: 4em;
+  padding: .5em;
+}
+
+
+/* Delete after image got */
+/* #skills {
+  font-size: 8em;
+  background-color: #fff284;
+} */
+
+
+#skills-break-image {
+  background-image: url('./assets/skills.png');
+  height: 30em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+#project-break-image {
   background-image: url('./assets/projects2.png');
   height: 30em;
   background-position: center;
