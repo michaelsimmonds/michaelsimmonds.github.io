@@ -11,6 +11,7 @@
 body {
   color: #161F28;
   font-family: moon-bold;
+  justify-content: center;
 }
 
 div {
@@ -106,6 +107,7 @@ div {
 .project-content {
   display: flex;
   padding: 5px;
+  justify-content: center;
 }
 
 img {
@@ -115,7 +117,7 @@ img {
 
 a {
   display: block;
-  margin: 1em 1em 0 0;
+  /* margin: 1em 1em 0 0; */
   color: #161F28;
   text-decoration: none;
 }
@@ -237,29 +239,20 @@ ul {
 /********************** MEDIA QUERIES************ *****************************/
 
 @media screen and (max-width: 600px) {
-  body {
-    /* background-color: lightblue; */
-  }
-
-  .break-image {
-    /* padding: 1em 0; */
-    /* padding-top: 5em; */
-
-    /* width: 100vh; */
-
-  }
 
   #hero, #contact-break-image, #skills-break-image, #project-break-image, #thanks-image {
     padding: 0;
     margin: 60px 0;
     height: 10em;
+    /* width: 100%; */
     background-attachment: scroll;
     padding: 1em;
   }
 
   .project-writing {
-    width: 70%;
+    /* width: 70%; */
     margin: auto;
+    padding: 7px;
   }
 
   .about, .devicons, .contact-div, .project-content {
@@ -275,6 +268,33 @@ ul {
     display: flex;
     flex-direction: column;
     /* margin: 5px; */
+  }
+
+  a {
+    font-size: .7em;
+  }
+
+  #me {
+    height: auto;
+    width: 70%;
+  }
+
+  div {
+    padding: 20px 0;
+  }
+
+  .project-image {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 300px;
+    justify-content: center;
+  }
+
+  .project-content * {
+    padding: 5px;
   }
 
 }
