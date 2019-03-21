@@ -17,6 +17,8 @@ div {
   padding: 20px;
 }
 
+/****************************** ABOUT *****************************************/
+
 .about {
   display: flex;
   margin-bottom: 5em;
@@ -39,6 +41,8 @@ div {
 }
 
 
+/********************** SKILLS ************************************************/
+
 .devicons {
   display: flex;
   flex-direction: column;
@@ -51,7 +55,6 @@ div {
   padding: .5em;
 }
 
-
 /***************************** Break Images ***********************************/
 .break-image {
   background-position: center;
@@ -63,38 +66,41 @@ div {
   justify-content: center;
   background-attachment: fixed;
   margin: 0;
+  height: 30em;
 }
 
 #hero {
   background-image: url('./assets/design-with-name.png');
-  height: 30em;
+  /* height: 30em; */
   padding: 10em 0;
 }
 
 #contact-break-image {
   background-image: url('./assets/contact3.png');
-  height: 31em;
+  /* height: 31em; */
   /* margin: 2em -.5em; */
-  bottom: 0;
-  padding: 1em;
+  /* bottom: 0; */
+  /* margin: 1em 0; */
 }
 
 #skills-break-image {
   background-image: url('./assets/skills.png');
-  height: 30em;
+  /* height: 30em; */
 }
 
 #project-break-image {
   background-image: url('./assets/projects2.png');
-  height: 30em;
+  /* height: 30em; */
 }
 
 #thanks-image {
   background-image: url('./assets/thanks.png');
   height: 37em;
   /* margin-right: -20px; */
-  padding-bottom: -20px;
+  /* padding-bottom: -20px; */
 }
+
+/************************ PROJECT CONTENT *************************************/
 
 .project-content {
   display: flex;
@@ -165,49 +171,47 @@ button:hover {
   background-image: url('./assets/chevron-up.png');
 }
 
-.title-area-1 {
+/********************** PROJECT LINKS AND BORDERS *****************************/
+
+.link {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1em;
+}
+
+.space-title {
   border-bottom: 5px solid #C7DEED;
 }
 
 .space-link {
   border: 2px solid #C7DEED;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 1em;
 }
 
-.title-area-2 {
+.hack-title {
   border-bottom: 5px solid #FFF284;
 }
 
 .hack-link {
   border: 2px solid #FFF284;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 1em;
 }
 
-.title-area-3 {
+.travel-title {
   border-bottom: 5px solid #FFA89B;
 }
 
 .travel-link {
   border: 2px solid #FFA89B;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 1em;
 }
 
-.title-area-4 {
+.bar-title {
   border-bottom: 5px solid #161F28;
 }
 
 .bar-link {
   border: 2px solid #161F28;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 1em;
 }
+
+/*************************** CONTACT ******************************************/
 
 ul {
   list-style-type: none;
@@ -229,7 +233,7 @@ ul {
   font-size: 2.5em;
 }
 
-
+/********************** MEDIA QUERIES************ *****************************/
 
 @media screen and (max-width: 600px) {
   body {
@@ -250,7 +254,12 @@ ul {
     margin: 0;
   }
 
-  .devicons {
+  .project-writing {
+    width: 70%;
+    margin: auto;
+  }
+
+  .about, .devicons, .contact-div, .project-content {
     margin: 0;
   }
 
@@ -258,11 +267,10 @@ ul {
     padding: 0;
   }
 
-
   .about, .project-content {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    /* margin: 5px; */
   }
 
 }
