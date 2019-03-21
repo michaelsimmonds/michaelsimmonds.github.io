@@ -17,32 +17,6 @@ div {
   padding: 20px;
 }
 
-#hero, #bottom-hero {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#hero {
-  background-image: url('./assets/design-with-name.png');
-  height: 30em;
-  padding: 10em 0;
-  background-attachment: fixed;
-}
-
-#bottom-hero {
-  background-image: url('./assets/contact3.png');
-  height: 31em;
-  margin: 2em -.5em;
-  background-attachment: fixed;
-  bottom: 0;
-  padding: 1em;
-}
-
 .about {
   display: flex;
   margin-bottom: 5em;
@@ -78,39 +52,48 @@ div {
 }
 
 
-/* Delete after image got */
-/* #skills {
-  font-size: 8em;
-  background-color: #fff284;
-} */
+/***************************** Break Images ***********************************/
+.break-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  margin: 0;
+}
 
+#hero {
+  background-image: url('./assets/design-with-name.png');
+  height: 30em;
+  padding: 10em 0;
+}
+
+#contact-break-image {
+  background-image: url('./assets/contact3.png');
+  height: 31em;
+  /* margin: 2em -.5em; */
+  bottom: 0;
+  padding: 1em;
+}
 
 #skills-break-image {
   background-image: url('./assets/skills.png');
   height: 30em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
 }
-
-
-
-
-
-
-
-
-
-
 
 #project-break-image {
   background-image: url('./assets/projects2.png');
   height: 30em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
+}
+
+#thanks-image {
+  background-image: url('./assets/thanks.png');
+  height: 37em;
+  /* margin-right: -20px; */
+  padding-bottom: -20px;
 }
 
 .project-content {
@@ -246,30 +229,35 @@ ul {
   font-size: 2.5em;
 }
 
-#end-image {
-  background-image: url('./assets/thanks.png');
-  height: 37em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  text-align: center;
-  margin-right: -20px;
-  padding-bottom: -20px;
-}
 
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    /* background-color: lightblue; */
   }
 
-  #hero, #end-image, #bottom-hero, #break-image {
-    padding: 1em 0;
-    height: 3em;
-    padding-top: 5em;
+  .break-image {
+    /* padding: 1em 0; */
+    /* height: 3em; */
+    /* padding-top: 5em; */
     background-attachment: scroll;
+    /* width: 100vh; */
+    padding: 1em;
   }
+
+  #hero, #contact-break-image, #skills-break-image, #project-break-image, #thanks-image {
+    padding: 0;
+    margin: 0;
+  }
+
+  .devicons {
+    margin: 0;
+  }
+
+  .contact-div {
+    padding: 0;
+  }
+
 
   .about, .project-content {
     display: flex;
@@ -277,4 +265,4 @@ ul {
     margin: 5px;
   }
 
-} */
+}
