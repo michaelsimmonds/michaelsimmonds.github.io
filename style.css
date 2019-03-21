@@ -219,7 +219,7 @@ ul {
 }
 
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
@@ -234,8 +234,7 @@ ul {
   .about, .project-content {
     display: flex;
     flex-direction: column;
-    align-content: center;
     margin: 5px;
   }
 
-}
+} */
