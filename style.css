@@ -65,27 +65,28 @@ div {
   background-attachment: fixed;
   margin: 0;
   height: 30em;
+  /* transform: translateZ(-1px) scale(.9); */
 }
 
 #hero {
-  background-image: url('./assets/design-with-name.png');
+  background-image: url('./assets/finalName.png');
   padding: 10em 0;
 }
 
 #contact-break-image {
-  background-image: url('./assets/contact3.png');
+  background-image: url('./assets/finalContact.png');
 }
 
 #skills-break-image {
-  background-image: url('./assets/skills.png');
+  background-image: url('./assets/finalSkills.png');
 }
 
 #project-break-image {
-  background-image: url('./assets/projects2.png');
+  background-image: url('./assets/finalProjects.png');
 }
 
 #thanks-image {
-  background-image: url('./assets/thanks.png');
+  background-image: url('./assets/finalThanks.png');
   height: 37em;
 }
 
@@ -224,21 +225,6 @@ ul {
 }
 
 /********************** MEDIA QUERIES******************************************/
-
-/* @media screen and (max-width: 600px)
-
-
-
-
-
-
-
-
-
-
-
- */
-
 
 @media screen and (max-width: 600px) {
 
