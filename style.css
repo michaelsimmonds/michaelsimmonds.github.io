@@ -8,6 +8,11 @@
   font-family: moon-bold;
 }
 
+@font-face {
+  src: url(fonts/metropolis/Metropolis-Light.otf);
+  font-family: metropolis-light;
+}
+
 body {
   color: #161F28;
   font-family: moon-bold;
@@ -52,7 +57,7 @@ div {
 }
 
 .skills-icon {
-  font-size: 4em;
+  font-size: 3.5em;
   margin: .2em;
   padding: .2em;
 }
@@ -100,7 +105,6 @@ div {
 
 img {
   width: 30em;
-  padding: 1em;
 }
 
 a {
@@ -123,9 +127,10 @@ a {
 }
 
 p {
-  font-family: moon-light;
-  font-size: 1.3em;
+  font-family: metropolis-light;
+  font-size: 1.1em;
   text-align: justify;
+  margin-top: 0;
 }
 
 .title-area {
@@ -226,15 +231,15 @@ ul {
 
 /********************** MEDIA QUERIES******************************************/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
   #hero, #contact-break-image, #skills-break-image, #project-break-image, #thanks-image {
     padding: 0;
-    margin: 60px 0 0 0;
+    margin: 3em 0;
     height: 10em;
     background-attachment: scroll;
     padding: 1em 0;
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 
   .project-name, .about-title {
@@ -270,7 +275,7 @@ ul {
 
   #me {
     height: auto;
-    width: 70%;
+    width: 50%;
   }
 
   div {
