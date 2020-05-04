@@ -1,0 +1,435 @@
+@font-face {
+  // src: url(fonts/moon/light.otf);
+  font-family: moon-light;
+}
+
+@font-face {
+  // src: url(fonts/moon/bold.otf);
+  font-family: moon-bold;
+}
+
+@font-face {
+  src: url(fonts/metropolis/Metropolis-Light.otf);
+  font-family: metropolis-light;
+}
+
+@font-face {
+  src: url(fonts/metropolis/Metropolis-Bold.otf);
+  font-family: metropolis-bold;
+}
+
+$white: #fff;
+$primary: #161F28;
+$blue : #C7DEED;
+$yellow: #FFF284;
+$red: #FFA89B;
+$dark: #161F28;
+
+.container {
+  max-width: 1330px;
+  margin: auto;
+}
+
+body {
+  color: #161F28;
+  font-family: moon-bold;
+  justify-content: center;
+  margin: 0;
+}
+
+.text {
+  &--body {
+    font-family: metropolis-light;
+    font-size: 21px;
+    line-height: 28px;
+    margin: 0 0 15px;
+  }
+}
+
+.header {
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 50px;
+}
+
+
+/****************************** ABOUT *****************************************/
+
+.about {
+  text-align: center;
+  // margin-bottom: 50px;
+  height: 100vh;
+  background-color: rgba($blue, 1);
+  width: 100%;
+  // display: flex;
+
+  &__content-wrapper {
+    display: flex;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  //
+  // &__image-wrapper {
+  //   // margin-left: 0;
+  //   width: auto;
+  //   // display: inline-block;
+  // }
+
+  &__image {
+    border-radius: 50%;
+    width: 330px;
+    padding: 0;
+  }
+}
+
+
+/********************** GA Projects ************************************************/
+
+.ga-projects {
+  // padding: 50px 0 200px;
+  height: 100vh;
+
+  &__controls-block {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    height: 160px;
+    width: 120px;
+  }
+
+  &__controls-block-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  // &__title {
+  //   font-size: 55px;
+  //   text-align: center;
+  //   margin-bottom: 50px;
+  // }
+
+  &__project-title {
+    font-size: 30px;
+  }
+
+  &__image-wrapper {
+    width: 55%;
+    display: block;
+    margin: 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+  }
+
+  &__top-wrapper {
+    width: 75%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  &__body-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text-wrapper {
+    padding-left: 80px;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  &__cta {
+    margin-right: 10px;
+  }
+
+
+  .swiper-slide {
+    height: 100%;
+    transition: all .5s ease;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    left: auto;
+    height: 40px;
+    width: 40px;
+    right: 50%;
+
+    &__chevron {
+      height: 40px;
+      width: 40px;
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+
+  .swiper-pagination {
+    font-family: metropolis-light;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  .swiper-pagination-current {
+    font-size: 80px;
+  }
+
+  .swiper-pagination-total {
+    font-size: 40px;
+    transform: translate(50%);
+  }
+
+  .swiper-button-next__chevron,
+  .swiper-button-prev__chevron {
+    transition: all .3s ease;
+  }
+
+  .swiper-button-next {
+    transform:  translate(50%, 50%) rotate(90deg);
+    bottom: 0;
+    top: auto;
+    right: 0;
+
+    &:hover {
+      .swiper-button-next__chevron {
+        transform: translateY(-8px);
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    transform: translate(-50%, 0%) rotate(-90deg) ;
+    top: 0;
+    left: 0;
+    bottom: auto;
+
+    &:hover {
+      .swiper-button-prev__chevron {
+        transform: translateY(-8px);
+      }
+    }
+  }
+}
+//
+//
+//
+// /********************** SKILLS ************************************************/
+//
+// .devicons {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   margin: 5.2em 0;
+// }
+//
+// .skills-icon {
+//   font-size: 4em;
+//   margin: .2em;
+//   padding: .2em;
+// }
+//
+// /***************************** Break Images ***********************************/
+.break-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  /* transform: translateZ(-1px) scale(.9); */
+}
+//
+#hero {
+  background-image: url('./assets/finalName.png');
+  // opacity: 0;
+}
+//
+// #contact-break-image {
+//   background-image: url('./assets/finalContact.png');
+// }
+//
+// #skills-break-image {
+//   background-image: url('./assets/finalSkills.png');
+// }
+//
+// #project-break-image {
+//   background-image: url('./assets/finalProjects.png');
+// }
+//
+// #thanks-image {
+//   background-image: url('./assets/finalThanks.png');
+// }
+
+
+
+
+/*************************** Nav ******************************************/
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: $white;
+  transition: all .5s ease;
+  overflow: hidden;
+
+  &--hide {
+    top: -72px;
+  }
+
+  &__list {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__link {
+    color: $primary;
+    text-decoration: none;
+    font-family: metropolis-bold;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    transition: background-size .3s, color .3s;
+    // background-image: linear-gradient($white, $white);
+
+    &--effect {
+      background-position: 50% 50%;
+      background-size: 0% 0%
+    }
+
+    &--blue {
+      background-image: linear-gradient($blue, $blue);
+    }
+
+    &--yellow {
+      background-image: linear-gradient($yellow, $yellow);
+    }
+
+    &--red {
+      background-image: linear-gradient($red, $red);
+    }
+
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+
+
+// ###################### icons #####################################
+
+
+
+$icon-size    : 50px;
+$border-radius: 0;
+
+
+
+.cta {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: $icon-size * 3;
+    height: $icon-size;
+    text-align: center;
+    line-height: $icon-size;
+    color: $primary;
+    text-decoration: none;
+    overflow: hidden;
+
+    &:hover {
+      span {
+        color: $white;
+      }
+    }
+
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transition: all 0.25s ease;
+        border-radius: $icon-size*$border-radius;
+    }
+
+    span {
+        position: relative;
+        color: $primary;
+        transition: all 0.25s ease;
+    }
+}
+
+.cta-fill{
+    transition-duration: 0.5s;
+
+  &--space {
+    &::before{
+        box-shadow: inset 0 0 0 1px $blue;
+    }
+    &:hover::before{
+        box-shadow: inset 0 0 0 $icon-size $blue;
+    }
+  }
+
+  &--hack {
+    &::before{
+        box-shadow: inset 0 0 0 1px $red;
+    }
+    &:hover::before{
+        box-shadow: inset 0 0 0 $icon-size $red;
+    }
+  }
+
+  &--travel {
+    &::before{
+        box-shadow: inset 0 0 0 1px $yellow;
+    }
+    &:hover::before{
+        box-shadow: inset 0 0 0 $icon-size $yellow;
+    }
+  }
+
+  &--bar {
+    &::before{
+        box-shadow: inset 0 0 0 1px $dark;
+    }
+    &:hover::before{
+        box-shadow: inset 0 0 0 $icon-size $dark;
+    }
+  }
+}
