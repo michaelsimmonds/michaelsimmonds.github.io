@@ -9,6 +9,7 @@ import Nav from './components/js/Nav'
 import Hero from './components/js/Hero'
 import Intro from './components/js/Intro'
 import Software from './components/js/Software'
+import Commercial from './components/js/Commercial'
 import GaProjects from './components/js/ga-projects'
 
 
@@ -22,6 +23,7 @@ class App extends React.Component {
           <Route component={Hero}/>
           <Route component={Intro}/>
           <Route component={Software}/>
+          <Route component={Commercial}/>
           <Route component={GaProjects}/>
         </main>
 

@@ -19,13 +19,16 @@ const Software = () => {
             <img className="software__icon" src="./assets/icons/javascript.svg"/>
           </li>
           <li className="software__list-item">
+            <img className="software__icon" src="./assets/icons/typescript.svg"/>
+          </li>
+          <li className="software__list-item">
+            <img className="software__icon software__icon--nuxt" src="./assets/icons/nuxt.svg"/>
+          </li>
+          <li className="software__list-item">
             <img className="software__icon" src="./assets/icons/vue-js-1.svg"/>
           </li>
           <li className="software__list-item">
             <img className="software__icon" src="./assets/icons/react.svg"/>
-          </li>
-          <li className="software__list-item">
-            <img className="software__icon" src="./assets/icons/typescript.svg"/>
           </li>
           <li className="software__list-item">
             <img className="software__icon software__icon--git" src="./assets/icons/git.svg"/>
