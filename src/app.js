@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom'
 import Nav from './components/js/Nav'
 import Hero from './components/js/Hero'
 import Intro from './components/js/Intro'
+import Software from './components/js/Software'
 import GaProjects from './components/js/ga-projects'
 
 
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route component={Nav}/>
           <Route component={Hero}/>
           <Route component={Intro}/>
+          <Route component={Software}/>
           <Route component={GaProjects}/>
         </main>
 
@@ -32,23 +34,3 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 )
-
-
-// <Route path="/events/:id" component={EventsShow} />
-// <Route exact path="/events" component={EventsIndex}>Events</Route>
-
-
-// old app.js file below
-// $('DOM content loaded', function() {
-//
-//   $('#hero').animate({ opacity: 1 }, { duration: 3000 })
-//
-//   $('.project-content').hide()
-//
-//   $('button').click(function () {
-//     $(this).prev('.project-content').slideToggle()
-//     $(this).prev('.project-content').css('display', 'flex')
-//     $(this).toggleClass('show-button hide-button')
-//   })
-//
-// })

@@ -2,9 +2,9 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className="about">
+    <div className="about module-padding module-padding--no-top">
       <div className="container">
-        <h2 className="about__title header">About</h2>
+        <h2 className="about__title heading">About</h2>
         <div className="about__content-wrapper">
           <figure className="about__image-wrapper">
             <img src="./assets/me.JPG" alt="me" id="me" className="about__image"/>

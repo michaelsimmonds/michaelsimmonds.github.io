@@ -24,25 +24,25 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="nav">
-
-        <ul className="nav__list">
-          <li className="nav__list-item">
-            <a className="nav__link nav__link--effect nav__link--blue" href="mailto:michaelsimmonds1992@gmail.com">
-              <img className="nav__icon" src="./assets/icons/email.svg"/><span>michaelsimmonds1992@gmail.com</span>
-            </a>
-          </li>
-          <li className="nav__list-item">
-            <a className="nav__link nav__link--effect nav__link--yellow" href="https://github.com/michaelsimmonds" target="_blank">
-              <img className="nav__icon" src="./assets/icons/github.svg"/><span>github.com/michaelsimmonds</span>
-            </a>
-          </li>
-          <li className="nav__list-item">
-            <a className="nav__link nav__link--effect nav__link--red" href="https://www.linkedin.com/in/michaelsimmonds1992/" target="_blank" >
-              <img className="nav__icon" src="./assets/icons/linkedin.svg"/><span>linkedin.com/in/michaelsimmonds1992</span>
-            </a>
-          </li>
-        </ul>
-
+        <div className="container">
+          <ul className="nav__list">
+            <li className="nav__list-item">
+              <a className="nav__link nav__link--effect nav__link--blue" href="mailto:michaelsimmonds1992@gmail.com">
+                <img className="nav__icon" src="./assets/icons/email.svg"/><span>michaelsimmonds1992@gmail.com</span>
+              </a>
+            </li>
+            <li className="nav__list-item">
+              <a className="nav__link nav__link--effect nav__link--yellow" href="https://github.com/michaelsimmonds" target="_blank">
+                <img className="nav__icon" src="./assets/icons/github.svg"/><span>github.com/michaelsimmonds</span>
+              </a>
+            </li>
+            <li className="nav__list-item">
+              <a className="nav__link nav__link--effect nav__link--red" href="https://www.linkedin.com/in/michaelsimmonds1992/" target="_blank" >
+                <img className="nav__icon" src="./assets/icons/linkedin.svg"/><span>linkedin.com/in/michaelsimmonds1992</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }
