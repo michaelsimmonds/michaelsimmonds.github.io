@@ -43,7 +43,7 @@ class Commercial extends React.Component {
               <div className="swiper-slide">
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper">
-                    <h3 className="subheading projects__project-title">Website build for Adventure Cruise company</h3>
+                    <h3 className="subheading projects__project-title">Travel</h3>
                     <p className="text--body"></p>
                   </div>
                   <div className="projects__body-wrapper">
@@ -63,7 +63,7 @@ class Commercial extends React.Component {
               <div className="swiper-slide">
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper">
-                    <h3 className="subheading projects__project-title">Website build for three luxury hotels</h3>
+                    <h3 className="subheading projects__project-title">Hospitality</h3>
                     <p className="text--body"></p>
                   </div>
                   <div className="projects__body-wrapper">

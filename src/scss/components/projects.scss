@@ -1,31 +1,11 @@
 .projects {
-  &__controls-block {
-    position: absolute;
-    top: 25px;
-    right: 60px;
-    height: 30px;
-    width: 60px;
-
-    @include media-breakpoint-up(md) {
-      top: 30px;
-      right: 55px;
-      height: 160px;
-      width: 120px;
-    }
-
-    @include media-breakpoint-up(lg) {
-      right: 100px;
-    }
-  }
-
-  &__controls-block-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-
   &__project-title {
     max-width: 70%;
+
+    &--invert {
+      margin-right: 0;
+      margin-left: auto;
+    }
 
     @include media-breakpoint-up(md) {
       max-width: none;
@@ -43,6 +23,7 @@
 
     @include media-breakpoint-up(lg) {
       width: 50%;
+      margin: 0;
     }
   }
 
@@ -66,8 +47,15 @@
     margin-left: 0;
     margin-bottom: 30px;
 
+    &--invert {
+      margin-right: 0;
+      margin-left: auto;
+      text-align: right;
+    }
+
     @include media-breakpoint-up(md) {
       width: 75%;
+      margin-bottom: 40px;
     }
   }
 
@@ -78,6 +66,10 @@
     @include media-breakpoint-up(md) {
       flex-direction: row;
       align-items: center;
+
+      &--invert {
+        flex-direction: row-reverse;
+      }
     }
   }
 
@@ -96,6 +88,14 @@
       max-width: 320px;
       padding-left: 80px;
     }
+
+    &--invert {
+      @include media-breakpoint-up(lg) {
+        padding-right: 80px;
+        padding-left: 0;
+        text-align: right;
+      }
+    }
   }
 
   &__cta {
@@ -106,27 +106,50 @@
     margin-top: 30px;
   }
 
-
   .swiper-slide {
     height: 100%;
     transition: all .5s ease;
   }
 
-  .swiper-button-next,
-  .swiper-button-prev {
-    left: auto;
-    height: 40px;
-    width: 40px;
-    right: 50%;
+  &__controls-block {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    height: 30px;
+    width: 60px;
 
-    &__chevron {
-      height: 30px;
-      width: 30px;
+    @include media-breakpoint-up(md) {
+      top: 30px;
+      right: 55px;
+      height: 160px;
+      width: 120px;
     }
 
-    &:after {
-      content: '';
+    @include media-breakpoint-up(lg) {
+      right: 100px;
     }
+
+    &--invert {
+      left: 30px;
+
+      @include media-breakpoint-up(md) {
+        left: 50px;
+      }
+      @include media-breakpoint-up(lg) {
+        left: 100px;
+      }
+    }
+  }
+
+  &__controls-block-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .swiper-container {
+    margin-top: 10px;
+    padding-top: 10px;
   }
 
   .swiper-pagination {
@@ -149,9 +172,22 @@
     transform: translate(50%);
   }
 
-  .swiper-button-next__chevron,
-  .swiper-button-prev__chevron {
-    transition: all .3s ease;
+  .swiper-button-next,
+  .swiper-button-prev {
+    left: auto;
+    height: 40px;
+    width: 40px;
+    right: 50%;
+
+    &__chevron {
+      height: 25px;
+      width: 25px;
+      transition: all .3s ease;
+    }
+
+    &:after {
+      content: '';
+    }
   }
 
   .swiper-button-next {
@@ -159,6 +195,12 @@
     bottom: 0;
     top: auto;
     right: 0;
+
+    &--invert {
+      transform:  translate(50%, 0%) rotate(90deg);
+      top: 0;
+      bottom: auto;
+    }
 
     &:hover {
       .swiper-button-next__chevron {
@@ -172,6 +214,12 @@
     top: 0;
     left: 0;
     bottom: auto;
+
+    &--invert {
+      transform: translate(-50%, 50%) rotate(-90deg) ;
+      top: auto;
+      bottom: 0;
+    }
 
     &:hover {
       .swiper-button-prev__chevron {
