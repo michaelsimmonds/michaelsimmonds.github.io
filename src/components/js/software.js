@@ -73,24 +73,3 @@ const Software = () => {
 }
 
 export default Software
-
-
-
-
-
-  // <li className="software__list-item"><i className="software__icon devicon-nodejs-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-express-original-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-python-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-postgresql-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-webpack-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-mongodb-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-mocha-plain skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-jquery-plain-wordmark skills-icon"></i></li>
-  //
-  //
-  // <li className="software__list-item"><i className="software__icon devicon-css3-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-javascript-plain skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-vuejs-plain-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-typescript-plain skills-icon"></i></li>
-  // <li className="software__list-item"><i className="software__icon devicon-react-original-wordmark skills-icon"></i></li>
-  // <li className="software__list-item"i><i className="software__icon devicon-git-plain-wordmark skills-icon"></i></li>

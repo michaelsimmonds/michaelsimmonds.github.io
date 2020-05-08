@@ -1,0 +1,69 @@
+.software {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    padding: 0 15px;
+  }
+
+  &__subheading {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 15px;
+    font-family: metropolis-light;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+
+    &:first-of-type {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__list-item {
+    margin: 20px 0;
+    width: 50%;
+
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: auto;
+      margin: 20px 30px;
+    }
+  }
+
+  &__icon {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+
+    @include media-breakpoint-up(lg) {
+      height: 80px;
+      width: 80px;
+    }
+
+    &--git {
+      height: 40px;
+      margin-top: 20px;
+    }
+
+    &--chai {
+      width: 60px;
+      margin: 0 10px
+    }
+
+    &--nuxt {
+      filter: grayscale(100%);
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+.about {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__image-wrapper {
+    margin: 0 15px 30px;
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 100%;
+    padding: 0;
+  }
+}

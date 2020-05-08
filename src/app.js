@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import './style.scss'
 
-import { BrowserRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import Nav from './components/js/Nav'
 import Hero from './components/js/Hero'

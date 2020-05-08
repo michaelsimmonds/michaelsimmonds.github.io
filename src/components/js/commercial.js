@@ -31,26 +31,26 @@ class Commercial extends React.Component {
   }
   render() {
     return (
-      <div className="ga-projects module-padding">
+      <div className="projects module-padding">
         <div className="container">
 
-          <h2 className="ga-projects__title heading">Commercial Projects</h2>
+          <h2 className="projects__title heading">Commercial Projects</h2>
 
           <div className="swiper-container">
             <div className="swiper-wrapper">
 
 
               <div className="swiper-slide">
-                <div className="ga-projects__content-wrapper">
-                  <div className="ga-projects__top-wrapper">
-                    <h3 className="subheading ga-projects__project-title">Website build for Adventure Cruise company</h3>
+                <div className="projects__content-wrapper">
+                  <div className="projects__top-wrapper">
+                    <h3 className="subheading projects__project-title">Website build for Adventure Cruise company</h3>
                     <p className="text--body"></p>
                   </div>
-                  <div className="ga-projects__body-wrapper">
-                    <div className="ga-projects__image-wrapper">
-                      <img src="/assets/hotel.png" alt="game gif" className="ga-projects__image"/>
+                  <div className="projects__body-wrapper">
+                    <div className="projects__image-wrapper">
+                      <img src="/assets/hotel.png" alt="game gif" className="projects__image"/>
                     </div>
-                    <div className="ga-projects__text-wrapper">
+                    <div className="projects__text-wrapper">
                       <h3 className="subheading subheading--small">Software:</h3>
                       <p  className="text--body">Vue.js, TypeScript, SCSS.</p>
                       <p>Site not yet live</p>
@@ -61,16 +61,16 @@ class Commercial extends React.Component {
 
 
               <div className="swiper-slide">
-                <div className="ga-projects__content-wrapper">
-                  <div className="ga-projects__top-wrapper">
-                    <h3 className="subheading ga-projects__project-title">Website build for three luxury hotels</h3>
+                <div className="projects__content-wrapper">
+                  <div className="projects__top-wrapper">
+                    <h3 className="subheading projects__project-title">Website build for three luxury hotels</h3>
                     <p className="text--body"></p>
                   </div>
-                  <div className="ga-projects__body-wrapper">
-                    <div className="ga-projects__image-wrapper">
-                      <img src="./assets/hotel.png" alt="game gif" className="ga-projects__image"/>
+                  <div className="projects__body-wrapper">
+                    <div className="projects__image-wrapper">
+                      <img src="./assets/hotel.png" alt="game gif" className="projects__image"/>
                     </div>
-                    <div className="ga-projects__text-wrapper">
+                    <div className="projects__text-wrapper">
                       <h3 className="subheading subheading--small">Software:</h3>
                       <p  className="text--body">JavaScript, SCSS, Handlebars.</p>
                       <p>Site not yet live</p>
@@ -80,16 +80,16 @@ class Commercial extends React.Component {
               </div>
 
               <div className="swiper-slide">
-                <div className="ga-projects__content-wrapper">
-                  <div className="ga-projects__top-wrapper">
-                    <h3 className="subheading ga-projects__project-title">Matter of Form</h3>
+                <div className="projects__content-wrapper">
+                  <div className="projects__top-wrapper">
+                    <h3 className="subheading projects__project-title">Matter of Form</h3>
                     <p className="text--body"></p>
                   </div>
-                  <div className="ga-projects__body-wrapper">
-                    <div className="ga-projects__image-wrapper">
-                      <img src="./assets/hotel.png" alt="game gif" className="ga-projects__image"/>
+                  <div className="projects__body-wrapper">
+                    <div className="projects__image-wrapper">
+                      <img src="./assets/hotel.png" alt="game gif" className="projects__image"/>
                     </div>
-                    <div className="ga-projects__text-wrapper">
+                    <div className="projects__text-wrapper">
                       <h3 className="subheading subheading--small">Software:</h3>
                       <p  className="text--body">Vue.js, Nuxt.js, SCSS, Kentico.</p>
                       <p>Site not yet live</p>
@@ -100,8 +100,8 @@ class Commercial extends React.Component {
 
             </div>
 
-            <div className="ga-projects__controls-block">
-              <div className="ga-projects__controls-block-wrapper">
+            <div className="projects__controls-block">
+              <div className="projects__controls-block-wrapper">
                 <div className="swiper-button-prev">
                   <img src="./assets/chevron-up.png" className="swiper-button-prev__chevron"/>
                 </div>
