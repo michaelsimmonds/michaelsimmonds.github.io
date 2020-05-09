@@ -64,6 +64,24 @@
     &--nuxt {
       filter: grayscale(100%);
     }
+  }
 
+  @keyframes myFadeIn {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+  }
+
+  &__list-item {
+    opacity: 0;
+
+    .fadeIn & {
+      animation: 1s ease myFadeIn forwards;
+
+      @for $i from 1 through 50 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * (.1s);
+        }
+      }
+    }
   }
 }

@@ -1,41 +1,13 @@
+// helpers
 @import 'scss/helpers/breakpoints';
 @import 'scss/helpers/fonts';
 @import 'scss/helpers/colors';
 @import 'scss/helpers/general';
 @import 'scss/helpers/ctas';
 
+// components
 @import 'scss/components/intro';
 @import 'scss/components/software';
 @import 'scss/components/projects';
 @import 'scss/components/nav';
-
-
-// /***************************** Break Images ***********************************/
-
-.break-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0;
-  height: 100vh;
-}
-
-#hero {
-  background-image: url('./assets/finalName.png');
-}
-//
-// #contact-break-image {
-//   background-image: url('./assets/finalContact.png');
-// }
-//
-// #skills-break-image {
-//   background-image: url('./assets/finalSkills.png');
-// }
-//
-// #project-break-image {
-//   background-image: url('./assets/finalProjects.png');
-// }
-//
-// #thanks-image {
-//   background-image: url('./assets/finalThanks.png');
-// }
+@import 'scss/components/hero';

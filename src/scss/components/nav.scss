@@ -9,6 +9,10 @@
   overflow: hidden;
   z-index: 5;
 
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
   &--hide {
     top: -152px;
 
@@ -37,7 +41,7 @@
   }
 
   &__link {
-    color: $primary;
+    color: $dark;
     text-decoration: none;
     font-family: metropolis-bold;
     padding: 10px 5px;
@@ -75,5 +79,24 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
+  }
+
+  @keyframes myFadeIn {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+  }
+
+  &__list-item {
+    opacity: 0;
+
+    .fadeIn & {
+      animation: 1s ease myFadeIn forwards;
+
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * (.2s);
+        }
+      }
+    }
   }
 }

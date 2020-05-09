@@ -8,7 +8,7 @@ body, html {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  color: #161F28;
+  color: $dark;
   justify-content: center;
   font-family: moon-light;
 }
@@ -32,7 +32,7 @@ body, html {
   margin: 0;
   padding: 40px 0 40px;
   font-family: moon-bold;
-    font-size: 35px;
+  font-size: 35px;
 
   @include media-breakpoint-up(md) {
       font-size: 45px;

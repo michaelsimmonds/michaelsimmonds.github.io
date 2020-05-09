@@ -6,7 +6,7 @@
   height: 50px;
   text-align: center;
   line-height: 50px;
-  color: $primary;
+  color: $dark;
   text-decoration: none;
   overflow: hidden;
 
@@ -28,7 +28,7 @@
 
   span {
     position: relative;
-    color: $primary;
+    color: $dark;
     transition: all 0.25s ease;
   }
 }
