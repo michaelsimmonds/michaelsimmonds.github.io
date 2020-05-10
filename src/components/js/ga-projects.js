@@ -1,11 +1,10 @@
 import React from 'react'
 import Swiper from 'swiper'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class GaProjects extends React.Component {
-
   componentDidMount() {
-
-    var swiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
       direction: 'horizontal',
       slidesPerView: 1,
       centeredSlides: true,
@@ -26,44 +25,53 @@ class GaProjects extends React.Component {
                 ' of ' +
                 '<span className="' + totalClass + '"></span>'
       }
-
     })
   }
+
   render() {
     return (
       <div className="projects module-padding">
         <div className="container">
 
-          <h2 className="projects__title heading">General Assembly Projects</h2>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+            <h2 className="projects__title heading">General Assembly Projects</h2>
+          </ScrollAnimation>
 
           <div className="swiper-container">
             <div className="swiper-wrapper">
 
-
               <div className="swiper-slide">
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper projects__top-wrapper--invert">
-                    <h3 className="subheading projects__project-title projects__project-title--invert">Space Invaders</h3>
-                    <p className="text--body">This week-long project was the first I completed at General Assembly. In this remake of the classic 80s arcade game, the player aims to shoot as many aliens as possible before running out of lives or the aliens invade. Each wave gets harder and harder, with the aliens moving faster and shooting more frequently. Why not give it a go??</p>
+                    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                      <h3 className="subheading projects__project-title projects__project-title--invert">Space Invaders</h3>
+                      <p className="text--body">This week-long project was the first I completed at General Assembly. In this remake of the classic 80s arcade game, the player aims to shoot as many aliens as possible before running out of lives or the aliens invade. Each wave gets harder and harder, with the aliens moving faster and shooting more frequently. Why not give it a go??</p>
+                    </ScrollAnimation>
                   </div>
                   <div className="projects__body-wrapper projects__body-wrapper--invert">
                     <div className="projects__image-wrapper">
-                      <img src="/assets/invaders.gif" alt="game gif" className="projects__image"/>
+                      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <img src="/assets/invaders.gif" alt="game gif" className="projects__image"/>
+                      </ScrollAnimation>
                     </div>
                     <div className="projects__text-wrapper projects__text-wrapper--invert">
-                      <h3 className="subheading subheading--small">Software:</h3>
-                      <p  className="text--body">Vanilla JavaScript, HTML, CSS.</p>
-                      <div className="projects__cta-wrapper">
-                        <a href="https://github.com/michaelsimmonds/WDI-Project-01" target="_blank" className="cta cta-fill cta-fill--bar projects__cta">
-                          <span>See the Code</span>
-                        </a>
-                        <a href="http://michaelsimmonds.me/WDI-Project-01/" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>Play the Game</span></a>
-                      </div>
+                      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <h3 className="subheading subheading--small">Software:</h3>
+                        <p  className="text--body">Vanilla JavaScript, HTML, CSS.</p>
+                      </ScrollAnimation>
+
+                      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <div className="projects__cta-wrapper">
+                          <a href="https://github.com/michaelsimmonds/WDI-Project-01" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta">
+                            <span>See the Code</span>
+                          </a>
+                          <a href="http://michaelsimmonds.me/WDI-Project-01/" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>Play the Game</span></a>
+                        </div>
+                      </ScrollAnimation>
                     </div>
                   </div>
                 </div>
               </div>
-
 
               <div className="swiper-slide">
                 <div className="projects__content-wrapper">
@@ -79,8 +87,8 @@ class GaProjects extends React.Component {
                       <h3 className="subheading subheading--small">Software:</h3>
                       <p  className="text--body">React, Axios, JavaScript, CSS, Bulma.</p>
                       <div className="projects__cta-wrapper">
-                        <a href="https://github.com/michaelsimmonds/WDI-Project-02-Hackathon" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>See the Code</span></a>
-                        <a href="https://react-comedynight-hackathon.herokuapp.com/" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>Visit the Site</span></a>
+                        <a href="https://github.com/michaelsimmonds/WDI-Project-02-Hackathon" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>See the Code</span></a>
+                        <a href="https://react-comedynight-hackathon.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>Visit the Site</span></a>
                       </div>
                     </div>
                   </div>
@@ -91,7 +99,7 @@ class GaProjects extends React.Component {
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper projects__top-wrapper--invert">
                     <h3 className="subheading projects__project-title projects__project-title--invert">Explore Travel</h3>
-                    <p className="text--body">For this five day group project, we built a full-stack application to plan and display a round-the-world trip. Users can browse the famous sites that are included in our database and add them to their dashboard. They can then visualise their trip on their dashboard's map and change the order of their journey using a React drag-and-drop feature. I focussed on the backend for this project whilst my teammates worked on the frontend and the dashboard component respectively.</p>
+                    <p className="text--body">For this five day group project, we built a full-stack application to plan and display a round-the-world trip. Users can browse the famous sites that are included in our database and add them to their dashboard. They can then visualise their trip on their dashboard&apos;s map and change the order of their journey using a React drag-and-drop feature. I focussed on the backend for this project whilst my teammates worked on the frontend and the dashboard component respectively.</p>
                   </div>
                   <div className="projects__body-wrapper projects__body-wrapper--invert">
                     <div className="projects__image-wrapper">
@@ -101,8 +109,8 @@ class GaProjects extends React.Component {
                       <h3 className="subheading subheading--small">Software:</h3>
                       <p  className="text--body">React, JavaScript, CSS, Bulma, MongoDB, Mongoose, Express, Axios, Mocha, Chai, Webpack.</p>
                       <div className="projects__cta-wrapper">
-                        <a href="https://github.com/michaelsimmonds/WDI-Project-03-Explore-Travel" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>See the Code</span></a>
-                        <a href="https://explore-travel.herokuapp.com/" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>Visit the Site</span></a>
+                        <a href="https://github.com/michaelsimmonds/WDI-Project-03-Explore-Travel" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>See the Code</span></a>
+                        <a href="https://explore-travel.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>Visit the Site</span></a>
                       </div>
                     </div>
                   </div>
@@ -123,8 +131,8 @@ class GaProjects extends React.Component {
                       <h3 className="subheading subheading--small">Software:</h3>
                       <p  className="text--body">React, JavaScript, CSS, Bulma, PostgreSQL, SQLAlchemy, Flask, Sinon, Enzyme, Mocha, Chai, Webpack.</p>
                       <div className="projects__cta-wrapper">
-                        <a href="https://github.com/michaelsimmonds/WDI-Project-04-Sunset-Barlevard" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>See the Code</span></a>
-                        <a href="https://sunset-barlevard.herokuapp.com/" target="_blank" className="cta cta-fill cta-fill--bar projects__cta"><span>Visit the Site</span></a>
+                        <a href="https://github.com/michaelsimmonds/WDI-Project-04-Sunset-Barlevard" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>See the Code</span></a>
+                        <a href="https://sunset-barlevard.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="cta cta-fill cta-fill--bar projects__cta"><span>Visit the Site</span></a>
                       </div>
                     </div>
                   </div>
@@ -134,13 +142,15 @@ class GaProjects extends React.Component {
 
             <div className="projects__controls-block projects__controls-block--invert">
               <div className="projects__controls-block-wrapper">
-                <div className="swiper-button-prev swiper-button-prev--invert">
-                  <img src="./assets/chevron-up.png" className="swiper-button-prev__chevron"/>
-                </div>
-                <div className="swiper-pagination"></div>
-                <div className="swiper-button-next swiper-button-next--invert">
-                  <img src="./assets/chevron-up.png" className="swiper-button-next__chevron"/>
-                </div>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                  <div className="swiper-button-prev swiper-button-prev--invert">
+                    <img src="./assets/chevron-up.png" className="swiper-button-prev__chevron"/>
+                  </div>
+                  <div className="swiper-pagination"></div>
+                  <div className="swiper-button-next swiper-button-next--invert">
+                    <img src="./assets/chevron-up.png" className="swiper-button-next__chevron"/>
+                  </div>
+                </ScrollAnimation>
               </div>
             </div>
           </div>

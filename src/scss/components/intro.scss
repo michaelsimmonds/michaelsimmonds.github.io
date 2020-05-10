@@ -35,4 +35,20 @@
     width: 100%;
     padding: 0;
   }
+
+  .triggerSplitting & {
+    .splitting .word {
+      animation: slide-in 1.2s ease both;
+      animation-delay: calc(20ms * var(--word-index));
+      will-change:transform;
+      transform-origin: top left;
+    }
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  }
 }

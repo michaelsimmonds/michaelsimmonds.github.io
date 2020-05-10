@@ -6,15 +6,15 @@ const Software = () => {
     <div className="software module-padding">
       <div className="software__wrapper">
 
-        <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <h2 className="heading">Software</h2>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <h3 className="software__subheading">Proficient with</h3>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <ul className="software__list">
             <li className="software__list-item">
               <img className="software__icon" src="./assets/icons/html.svg"/>
@@ -43,10 +43,10 @@ const Software = () => {
           </ul>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <h3 className="software__subheading">Have experience with</h3>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" animateOnce="true">
+        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <ul className="software__list">
             <li className="software__list-item">
               <img className="software__icon" src="./assets/icons/python-4.svg"/>

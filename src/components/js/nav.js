@@ -24,7 +24,7 @@ class Nav extends React.Component {
     return (
       <div className="nav">
         <div className="container">
-          <ScrollAnimation animateIn="fadeIn" offset="0" animateOnce="true">
+          <ScrollAnimation animateIn="fadeIn" offset={0} animateOnce={true}>
             <ul className="nav__list">
               <li className="nav__list-item">
                 <a className="nav__link nav__link--effect nav__link--blue" href="mailto:michaelsimmonds1992@gmail.com">

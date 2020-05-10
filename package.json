@@ -26,6 +26,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "sass-loader": "^8.0.2",
+    "splitting": "^1.0.6",
     "style-loader": "^1.2.1",
     "swiper": "^5.3.8",
     "url-loader": "^4.1.0",

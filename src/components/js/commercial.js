@@ -1,10 +1,9 @@
 import React from 'react'
 import Swiper from 'swiper'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class Commercial extends React.Component {
-
   componentDidMount() {
-
     new Swiper('.swiper-container', {
       direction: 'horizontal',
       slidesPerView: 1,
@@ -26,34 +25,41 @@ class Commercial extends React.Component {
                 ' of ' +
                 '<span className="' + totalClass + '"></span>'
       }
-
     })
   }
+
   render() {
     return (
       <div className="projects module-padding">
         <div className="container">
 
-          <h2 className="projects__title heading">Commercial Projects</h2>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+            <h2 className="projects__title heading">Commercial Projects</h2>
+          </ScrollAnimation>
 
           <div className="swiper-container">
             <div className="swiper-wrapper">
 
-
               <div className="swiper-slide">
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper">
-                    <h3 className="subheading projects__project-title">Travel</h3>
-                    <p className="text--body"></p>
+                    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                      <h3 className="subheading projects__project-title">Travel</h3>
+                      <p className="text--body"></p>
+                    </ScrollAnimation>
                   </div>
                   <div className="projects__body-wrapper">
                     <div className="projects__image-wrapper">
-                      <img src="/assets/hotel.png" alt="game gif" className="projects__image"/>
+                      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <img src="/assets/hotel.png" alt="game gif" className="projects__image"/>
+                      </ScrollAnimation>
                     </div>
                     <div className="projects__text-wrapper">
-                      <h3 className="subheading subheading--small">Software:</h3>
-                      <p  className="text--body">Vue.js, TypeScript, SCSS.</p>
-                      <p>Site not yet live</p>
+                      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <h3 className="subheading subheading--small">Software:</h3>
+                        <p  className="text--body">Vue.js, TypeScript, SCSS.</p>
+                        <p>Site not yet live</p>
+                      </ScrollAnimation>
                     </div>
                   </div>
                 </div>
@@ -102,13 +108,15 @@ class Commercial extends React.Component {
 
             <div className="projects__controls-block">
               <div className="projects__controls-block-wrapper">
-                <div className="swiper-button-prev">
-                  <img src="./assets/chevron-up.png" className="swiper-button-prev__chevron"/>
-                </div>
-                <div className="swiper-pagination"></div>
-                <div className="swiper-button-next">
-                  <img src="./assets/chevron-up.png" className="swiper-button-next__chevron"/>
-                </div>
+                <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                  <div className="swiper-button-prev">
+                    <img src="./assets/chevron-up.png" className="swiper-button-prev__chevron"/>
+                  </div>
+                  <div className="swiper-pagination"></div>
+                  <div className="swiper-button-next">
+                    <img src="./assets/chevron-up.png" className="swiper-button-next__chevron"/>
+                  </div>
+                </ScrollAnimation>
               </div>
             </div>
           </div>
