@@ -14,7 +14,14 @@
     flex-direction: column;
 
     @include media-breakpoint-up(md) {
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: column;
       flex-direction: row;
+      align-items: center;
     }
   }
 
@@ -22,18 +29,37 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 15px;
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
   }
 
   &__image-wrapper {
     margin: 0 15px 30px;
     max-width: 300px;
+    max-height: 300px;
     flex-shrink: 0;
+    align-self: center;
   }
 
   &__image {
     border-radius: 50%;
     width: 100%;
     padding: 0;
+
+    @include media-breakpoint-only(md) {
+      float: left;
+      padding-right: 25px;
+      margin: 40px 0;
+    }
   }
 
   .triggerSplitting & {

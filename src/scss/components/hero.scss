@@ -50,4 +50,25 @@
       font-size: 70px;
     }
   }
+
+  &__title {
+    opacity: 0;
+    .triggerFadeIn & {
+      animation: myFadeIn 1.2s ease both;
+        animation-delay: .8s;
+    }
+  }
+
+  &__subtitle {
+    opacity: 0;
+    .triggerFadeIn & {
+      animation: myFadeIn 1.2s ease both;
+        animation-delay: 1s;
+    }
+  }
+
+  @keyframes myFadeIn {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+  }
 }

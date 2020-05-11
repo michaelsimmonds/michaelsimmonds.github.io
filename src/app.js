@@ -1,17 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import './style.scss'
-
 import { BrowserRouter, Route } from 'react-router-dom'
 
-import Nav from './components/js/Nav'
-import Hero from './components/js/Hero'
-import Intro from './components/js/Intro'
-import Software from './components/js/Software'
-import Commercial from './components/js/Commercial'
-import GaProjects from './components/js/ga-projects'
+import './style.scss'
+import 'splitting/dist/splitting.css'
+import 'splitting/dist/splitting-cells.css'
 
+import Nav from './components/js/nav'
+import Hero from './components/js/hero'
+import Intro from './components/js/intro'
+import Software from './components/js/software'
+import Commercial from './components/js/commercial'
+import GaProjects from './components/js/ga-projects'
+import Contact from './components/js/contact'
 
 class App extends React.Component {
   render() {
@@ -25,6 +26,7 @@ class App extends React.Component {
           <Route component={Software}/>
           <Route component={Commercial}/>
           <Route component={GaProjects}/>
+          <Route component={Contact}/>
         </main>
 
       </BrowserRouter>

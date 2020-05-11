@@ -33,6 +33,10 @@
     list-style: none;
     justify-content: space-around;
 
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+
     @include media-breakpoint-up(lg) {
       flex-direction: row;
       justify-content: space-between;
@@ -88,6 +92,10 @@
 
   &__list-item {
     opacity: 0;
+
+    @include media-breakpoint-down(sm) {
+      margin: 10px 0;
+    }
 
     .fadeIn & {
       animation: 1s ease myFadeIn forwards;

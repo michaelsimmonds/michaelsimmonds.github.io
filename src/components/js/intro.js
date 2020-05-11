@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
-import 'splitting/dist/splitting.css'
-import 'splitting/dist/splitting-cells.css'
+// import 'splitting/dist/splitting.css'
+// import 'splitting/dist/splitting-cells.css'
 import Splitting from 'splitting'
 
 class Intro extends React.Component {
@@ -25,7 +25,7 @@ class Intro extends React.Component {
             <div className="about__content-wrapper">
               <figure className="about__image-wrapper">
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                  <img src="./assets/me.JPG" alt="me" id="me" className="about__image"/>
+                  <img src="./assets/images/me.JPG" alt="photo of michael" className="about__image"/>
                 </ScrollAnimation>
               </figure>
 

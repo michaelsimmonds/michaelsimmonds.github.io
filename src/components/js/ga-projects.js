@@ -51,7 +51,7 @@ class GaProjects extends React.Component {
                   <div className="projects__body-wrapper projects__body-wrapper--invert">
                     <div className="projects__image-wrapper">
                       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                        <img src="/assets/invaders.gif" alt="game gif" className="projects__image"/>
+                        <img src="/assets/images/invaders.gif" alt="game gif" className="projects__image"/>
                       </ScrollAnimation>
                     </div>
                     <div className="projects__text-wrapper projects__text-wrapper--invert">
@@ -81,7 +81,7 @@ class GaProjects extends React.Component {
                   </div>
                   <div className="projects__body-wrapper projects__body-wrapper--invert">
                     <div className="projects__image-wrapper">
-                      <img src="./assets/hackathon.gif" alt="game gif" className="projects__image"/>
+                      <img src="./assets/images/hackathon.gif" alt="game gif" className="projects__image"/>
                     </div>
                     <div className="projects__text-wrapper projects__text-wrapper--invert">
                       <h3 className="subheading subheading--small">Software:</h3>
@@ -103,7 +103,7 @@ class GaProjects extends React.Component {
                   </div>
                   <div className="projects__body-wrapper projects__body-wrapper--invert">
                     <div className="projects__image-wrapper">
-                      <img src="./assets/travel-app.gif" alt="game gif" className="projects__image"/>
+                      <img src="./assets/images/travel-app.gif" alt="game gif" className="projects__image"/>
                     </div>
                     <div className="projects__text-wrapper projects__text-wrapper--invert">
                       <h3 className="subheading subheading--small">Software:</h3>
@@ -125,7 +125,7 @@ class GaProjects extends React.Component {
                   </div>
                   <div className="projects__body-wrapper projects__body-wrapper--invert">
                     <div className="projects__image-wrapper">
-                      <img src="./assets/barlevard.gif" alt="game gif" className="projects__image"/>
+                      <img src="./assets/images/barlevard.gif" alt="game gif" className="projects__image"/>
                     </div>
                     <div className="projects__text-wrapper projects__text-wrapper--invert">
                       <h3 className="subheading subheading--small">Software:</h3>
@@ -144,11 +144,11 @@ class GaProjects extends React.Component {
               <div className="projects__controls-block-wrapper">
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                   <div className="swiper-button-prev swiper-button-prev--invert">
-                    <img src="./assets/chevron-up.png" className="swiper-button-prev__chevron"/>
+                    <img src="./assets/icons/chevron-up.png" className="swiper-button-prev__chevron"/>
                   </div>
                   <div className="swiper-pagination"></div>
                   <div className="swiper-button-next swiper-button-next--invert">
-                    <img src="./assets/chevron-up.png" className="swiper-button-next__chevron"/>
+                    <img src="./assets/icons/chevron-up.png" className="swiper-button-next__chevron"/>
                   </div>
                 </ScrollAnimation>
               </div>
