@@ -45,7 +45,7 @@ class Commercial extends React.Component {
                   <div className="projects__top-wrapper">
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                       <h3 className="subheading projects__project-title">Travel</h3>
-                      <p className="text--body">As part of this adventure cruise company’s brand refresh, I worked as part of a team of 7 devs to build a new frontend in partnership with a backend team based in Russia. It was exciting to learn Vue.js and TypeScript on such a fast-paced and expansive project and illustrated how indispensable good communication is across all areas of a project.</p>
+                      <p className="text--body">As part of an adventure cruise company&apos;s brand refresh, I worked with a team of 7 devs to build a new frontend in partnership with a backend team based in Russia. It was exciting to learn Vue.js and TypeScript on such a fast-paced and expansive project and I really enjoyed seeing how our work developed into such a visually impressive website.</p>
                     </ScrollAnimation>
                   </div>
                   <div className="projects__body-wrapper">
@@ -58,7 +58,7 @@ class Commercial extends React.Component {
                       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                         <h3 className="subheading subheading--small">Software:</h3>
                         <p  className="text--body">Vue.js, TypeScript, SCSS.</p>
-                        <p>Site not yet live</p>
+                        <p className="projects__live-info">Site not yet live</p>
                       </ScrollAnimation>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ class Commercial extends React.Component {
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper">
                     <h3 className="subheading projects__project-title">Hospitality</h3>
-                    <p className="text--body">In this project we delivered the frontend for three luxury hotels, giving each one its own unique feel whilst maintaining brand continuity throughout. It was a great opportunity to develop the skills I had learned at GA whilst introducing more advanced facets of them, such as BEM methodology. After completion of the three sites, we completed the booking flow in a separate work stream and provided extensive integration support for our back end partner.</p>
+                    <p className="text--body">In this project we delivered the frontend for three luxury hotels, giving each one its own unique feel whilst maintaining brand continuity throughout. It was a great opportunity to develop the skills I had learnt at GA whilst introducing more advanced facets of them, such as BEM methodology. After our three sites had been built, we completed the booking flow in a separate workstream and provided extensive integration support to our backend partner.</p>
                   </div>
                   <div className="projects__body-wrapper">
                     <div className="projects__image-wrapper">
@@ -89,7 +89,7 @@ class Commercial extends React.Component {
                 <div className="projects__content-wrapper">
                   <div className="projects__top-wrapper">
                     <h3 className="subheading projects__project-title">Matter of Form</h3>
-                    <p className="text--body">Here I helped rebuild MOF’s website using a more advanced stack. It was a great opportunity to experiment with data flow and to take the initiative on how information was presented.</p>
+                    <p className="text--body">Here I helped rebuild MOF’s own website to reflect the company&apos;s revised values and principles, which involved upgrading our tech stack to Vue.js and Nuxt.js. As this was an internal project, it was a great opportunity for me to experiment with the data flow, to get to grips with Kentico and to take the initiative on how information was gathered and presented.</p>
                   </div>
                   <div className="projects__body-wrapper">
                     <div className="projects__image-wrapper">
