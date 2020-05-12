@@ -14,7 +14,7 @@ module.exports = {
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       { test: /\.s(a|c)ss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
-      { test: /\.(png|jpe?g|gif)$/i, loader: 'file-loader'},
+      { test: /\.(png|jpe?g|gif|svg)$/i, loader: 'file-loader'},
       { test: /\.(otf|woff|woff2)$/, loader: 'url-loader' }
     ]
   },
@@ -30,7 +30,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
-      inject: 'body'
+      inject: 'body',
+      favicon: 'src/assets/images/yellow-triangle.jpeg'
     }),
     new Dotenv()
   ]

@@ -1,13 +1,15 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
+import {Shapes} from '../images.js'
+
 const Hero = () => {
   return (
     <div className="hero container">
 
       <ScrollAnimation animateIn="fadeIn" offset={0} duration={3} animateOnce={true}>
         <figure className="hero__image-wrapper">
-          <img src="./assets/images/shapes.jpeg" className="hero__image" alt="shapes"/>
+          <img src={Shapes} className="hero__image" alt="shapes"/>
         </figure>
       </ScrollAnimation>
 

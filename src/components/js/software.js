@@ -1,6 +1,8 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
+import {  Chai, Express, Flask, Git, Html, JavaScript, Mocha, Mongodb, Nodejs, Nuxtjs, PostgreSQL, Python, ReactSVG, Sass, TypeScript, Vue, Webpack} from '../images.js'
+
 const Software = () => {
   return (
     <div className="software module-padding">
@@ -17,28 +19,28 @@ const Software = () => {
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <ul className="software__list">
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/html.svg"/>
+              <img className="software__icon" src={Html}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/sass-1.svg"/>
+              <img className="software__icon" src={Sass}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/javascript.svg"/>
+              <img className="software__icon" src={JavaScript}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/typescript.svg"/>
+              <img className="software__icon" src={TypeScript}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon software__icon--nuxt" src="./assets/icons/nuxt.svg"/>
+              <img className="software__icon software__icon--nuxt" src={Nuxtjs}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/vue-js-1.svg"/>
+              <img className="software__icon" src={Vue}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/react.svg"/>
+              <img className="software__icon" src={ReactSVG}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon software__icon--git" src="./assets/icons/git.svg"/>
+              <img className="software__icon software__icon--git" src={Git}/>
             </li>
           </ul>
         </ScrollAnimation>
@@ -49,31 +51,31 @@ const Software = () => {
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <ul className="software__list">
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/python-4.svg"/>
+              <img className="software__icon" src={Python}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/nodejs.svg"/>
+              <img className="software__icon" src={Nodejs}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/mongodb.svg"/>
+              <img className="software__icon" src={Mongodb}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/postgresql.svg"/>
+              <img className="software__icon" src={PostgreSQL}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/express-109.svg"/>
+              <img className="software__icon" src={Express}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/flask.svg"/>
+              <img className="software__icon" src={Flask}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/mocha-1.svg"/>
+              <img className="software__icon" src={Mocha}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon software__icon--chai" src="./assets/icons/chai.svg"/>
+              <img className="software__icon software__icon--chai" src={Chai}/>
             </li>
             <li className="software__list-item">
-              <img className="software__icon" src="./assets/icons/webpack-icon.svg"/>
+              <img className="software__icon" src={Webpack}/>
             </li>
           </ul>
         </ScrollAnimation>

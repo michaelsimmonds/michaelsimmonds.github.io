@@ -2,6 +2,8 @@ import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import Splitting from 'splitting'
 
+import {Me} from '../images.js'
+
 class Intro extends React.Component {
   componentDidMount() {
     Splitting({
@@ -23,7 +25,7 @@ class Intro extends React.Component {
             <div className="about__content-wrapper">
               <figure className="about__image-wrapper">
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                  <img src="./assets/images/me.JPG" alt="photo of michael" className="about__image"/>
+                  <img src={Me} alt="photo of michael" className="about__image"/>
                 </ScrollAnimation>
               </figure>
 

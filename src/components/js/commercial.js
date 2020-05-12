@@ -2,6 +2,8 @@ import React from 'react'
 import Swiper from 'swiper'
 import ScrollAnimation from 'react-animate-on-scroll'
 
+import {Hotel, Cruise, Mof, Chevron} from '../images.js'
+
 class Commercial extends React.Component {
   componentDidMount() {
     new Swiper('.swiper-container', {
@@ -51,7 +53,7 @@ class Commercial extends React.Component {
                   <div className="projects__body-wrapper">
                     <div className="projects__image-wrapper">
                       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                        <img src="/assets/images/cruise2.png" alt="game gif" className="projects__image"/>
+                        <img src={Cruise} alt="travel screenshot" className="projects__image"/>
                       </ScrollAnimation>
                     </div>
                     <div className="projects__text-wrapper">
@@ -74,7 +76,7 @@ class Commercial extends React.Component {
                   </div>
                   <div className="projects__body-wrapper">
                     <div className="projects__image-wrapper">
-                      <img src="./assets/images/hotel.png" alt="game gif" className="projects__image"/>
+                      <img src={Hotel} alt="hotel screenshot" className="projects__image"/>
                     </div>
                     <div className="projects__text-wrapper">
                       <h3 className="subheading subheading--small">Software:</h3>
@@ -93,7 +95,7 @@ class Commercial extends React.Component {
                   </div>
                   <div className="projects__body-wrapper">
                     <div className="projects__image-wrapper">
-                      <img src="./assets/images/mof2.png" alt="game gif" className="projects__image"/>
+                      <img src={Mof} alt="Matter of Form screenshot" className="projects__image"/>
                     </div>
                     <div className="projects__text-wrapper">
                       <h3 className="subheading subheading--small">Software:</h3>
@@ -110,11 +112,11 @@ class Commercial extends React.Component {
               <div className="projects__controls-block-wrapper">
                 <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                   <div className="swiper-button-prev">
-                    <img src="./assets/icons/chevron-up.png" className="swiper-button-prev__chevron"/>
+                    <img src={Chevron} className="swiper-button-prev__chevron"/>
                   </div>
                   <div className="swiper-pagination"></div>
                   <div className="swiper-button-next">
-                    <img src="./assets/icons/chevron-up.png" className="swiper-button-next__chevron"/>
+                    <img src={Chevron} className="swiper-button-next__chevron"/>
                   </div>
                 </ScrollAnimation>
               </div>
