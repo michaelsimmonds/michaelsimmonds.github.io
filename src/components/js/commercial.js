@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 import {Hotel, Cruise, Mof, Chevron} from '../images.js'
 
+
 class Commercial extends React.Component {
   componentDidMount() {
     new Swiper('.swiper-container', {
