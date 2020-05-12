@@ -1,7 +1,7 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import {Email, Github, LinkedIn } from '../images.js'
+import {Email, Github, LinkedIn, Me } from '../images.js'
 
 class Nav extends React.Component {
   componentDidMount() {
