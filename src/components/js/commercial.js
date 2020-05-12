@@ -2,7 +2,7 @@ import React from 'react'
 import Swiper from 'swiper'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import {Hotel, Cruise, Mof, Chevron} from '../images.js'
+import {Hotel, Cruise, Mof, Chevron, Travel} from '../images.js'
 
 class Commercial extends React.Component {
   componentDidMount() {
